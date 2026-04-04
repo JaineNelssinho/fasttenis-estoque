@@ -1,13 +1,17 @@
 {
   "name": "fasttenis-estoque",
   "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "^18.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^5.0.0"
   }
 }
