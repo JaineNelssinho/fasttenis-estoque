@@ -62,7 +62,7 @@ export default function App() {
   const commit = (np, nh) => { setProducts(np); setHistory(nh); save(np, nh); };
   const entry = (h, e) => [{ ...e, id: Date.now(), date: new Date().toLocaleString("pt-BR") }, ...h];
 Me 
-  Confirmado! Está certo. Parte 3 — cola logo abaixo:
+  Confirmado! (Está certo). Parte 3 — cola logo abaixo:
 const addProduct = () => {
     if (!form.name.trim() || !form.qty || !form.price)
       return showToast("Preencha nome, quantidade e preço.", "error");
