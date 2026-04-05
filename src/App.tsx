@@ -60,12 +60,12 @@ export default function App() {
   };
 
   const commit = (np, nh) => { setProducts(np); setHistory(nh); save(np, nh); };
-  const entry = (h, e) => [{ ...e, id: Date.now(), date: new Date().toLocaleString("pt-BR") }, ...h];
+  const entry = (h, e) => [{ ...e, id: Date.now(), date: new Date().toLocaleString(pt-BR) }, ...h];
 Me 
   Confirmado! (Está certo). Parte 3 — cola logo abaixo:
 const addProduct = () => {
     if (!form.name.trim() || !form.qty || !form.price)
-      return showToast("Preencha nome, quantidade e preço.", "error");
+      return showToast(Preencha nome, quantidade e preço)., (error);
     const p = { id: Date.now(), name: form.name.trim(), category: form.category,
       qty: parseInt(form.qty), minQty: parseInt(form.minQty) || 0, price: parseFloat(form.price) };
     commit([...products, p], entry(history, { productId: p.id, productName: p.name,
