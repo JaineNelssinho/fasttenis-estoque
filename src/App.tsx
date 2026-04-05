@@ -5,7 +5,6 @@ const API_KEY = "$2a$10$ioulsKYYmd97C2AG.H4rtOpCaMvjHtAaeEZKxRksaBh0eooX/5gwq";
 const BIN_ID = "69ced41536566621a873b6cc";
 const URL = `https://api.jsonbin.io/v3/b/${BIN_ID}`;
 const H = { "Content-Type": "application/json", "X-Master-Key": API_KEY, "X-Bin-Meta": "false" };
-Parte 2 — cola logo abaixo do que já tem:
 export default function App() {
   const [products, setProducts] = useState([]);
   const [history, setHistory] = useState([]);
