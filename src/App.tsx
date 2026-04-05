@@ -51,9 +51,9 @@ export default function App() {
     setSaving(true);
     try {
       await fetch(URL, { method: "PUT", headers: H, body: JSON.stringify({ products: np, history: nh }) });
-      setSyncTime(new Date().toLocaleTimeString("pt-BR"));
+      setSyncTime(new Date().toLocaleTimeString(pt-BR));
     } catch {
-      showToast(Erro ao salvar!, error);
+      showToast(Erro ao salvar!), (error);
     } finally {
       setSaving(false);
     }
@@ -76,7 +76,7 @@ const addProduct = () => {
 
   const registerMove = () => {
     if (!moveForm.productId || !moveForm.qty)
-      return showToast("Selecione produto e quantidade.", "error");
+      return showToast(Selecione produto e quantidade., (error);
     const qty = parseInt(moveForm.qty);
     const prod = products.find(p => p.id === parseInt(moveForm.productId));
     if (!prod) return;
