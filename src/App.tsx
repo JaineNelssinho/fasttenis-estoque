@@ -53,7 +53,7 @@ export default function App() {
       await fetch(URL, { method: "PUT", headers: H, body: JSON.stringify({ products: np, history: nh }) });
       setSyncTime(new Date().toLocaleTimeString("pt-BR"));
     } catch {
-      showToast("Erro ao salvar!"), "error";
+      showToast(Erro ao salvar!, error);
     } finally {
       setSaving(false);
     }
