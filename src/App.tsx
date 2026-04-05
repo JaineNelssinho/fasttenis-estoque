@@ -1,5 +1,5 @@
+import React from 'react'
 import { useState, useMemo, useEffect, useCallback } from 'react';
-
 const CATEGORIES = [
   'Todos',
   'Alimentos',
